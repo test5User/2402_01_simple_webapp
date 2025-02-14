@@ -5,6 +5,22 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>New welcome page</h1>
+    <form action="/formServ" method="post">
+        Name: <input name="userName"><br>
+        Age: <input type="number" name="userAge"><br>
+        Gender: <input type="radio" name="userGender" value="male" checked> Male
+                <input type="radio" name="userGender" value="female"> Female<br>
+        Country: <select name="userCountry">
+                    <option>Belarus</option>
+                    <option>Russia</option>
+                    <option>USA</option>
+                 </select><br>
+        Courses:
+            <input type="checkbox" name="courses" value="HTML" checked> HTML
+            <input type="checkbox" name="courses" value="CSS"> CSS
+            <input type="checkbox" name="courses" value="JS"> JS
+            <input type="checkbox" name="courses" value="Java"> Java<br>
+        <input type="submit" value="Send...">
+    </form>
 </body>
 </html>
